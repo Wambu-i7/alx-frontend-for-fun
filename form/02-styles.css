@@ -677,5 +677,5 @@
   flex-direction: column;         /* Arrange items in a column */
   justify-content: flex-start;    /* Align items to the start (top) */
   border: none;                   /* Remove the border */
-  padding: 0 0 2rem 0;            /* Apply padding: 0 at the top and sides, 2rem at the bottom */
+  padding: 0 0 2rem;            /* Apply padding: 0 at the top and sides, 2rem at the bottom */
 } 
