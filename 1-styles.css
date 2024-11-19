@@ -1,0 +1,20 @@
+a {
+    text-decoration: none;
+    position: relative;
+    color: #DC143C; /* Set the text color */
+}
+
+a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #DC143C; /* Set the underline color */
+    transition: width 0.3s ease; /* Smooth animation */
+}
+
+a:hover::after {
+    width: 100%;
+}
