@@ -1,0 +1,42 @@
+
+
+ul {
+    display: flex; /* Make list items appear in a row */
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  ul li {
+    flex: 1;               /* Each <li> takes equal width */
+    height: 500px;  
+    display: flex;
+    justify-content: center; /* Centers the text horizontally */
+    color: black;          /* Text color */
+    font-size: 40px;       /* Adjust font size */
+    font-weight:bolder;
+    position: relative;    /* Position the text and icon over the image */
+    text-align: center; 
+    background-size: cover; /* Ensures the background image fully covers the <li> */
+    background-position: center; /* Default to center the background */
+    margin: 0 20px;
+    border-radius: 20px;
+    border-width: 3px;
+    border-color: gray;
+    border-style: solid;
+  }
+  ul li:nth-child(1) {
+    background-image: url('0-sprite.png');
+    background-size: 300% 100%; /* Stretch the image across 3 parts */
+    background-position: left;   /* Show the left third of the image */
+}
+  ul li:nth-child(2) {
+    background-image: url('0-sprite.png');
+    background-size: 300% 100%;
+    background-position: center; /* Show the middle third of the image */
+  }
+  ul li:nth-child(3) {
+    background-image: url('0-sprite.png');
+    background-size: 300% 100%;
+    background-position: right;  /* Show the right third of the image */
+  }
