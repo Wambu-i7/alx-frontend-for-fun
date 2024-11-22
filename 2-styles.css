@@ -1,0 +1,64 @@
+
+.toggle {
+  position: relative;
+  width: 150px;
+  height: 50px;
+  margin-top: 20px;
+}
+
+/* Hide the default checkbox */
+.toggle-cb {
+  display: none;
+}
+
+/* slider */
+.toggle-label {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #cccccc73;
+  border-radius: 50px;
+  transition: background-color 0.3s;
+}
+
+/* The circle inside the slider */
+.toggle-switch {
+  position: absolute;
+  content: "";
+  width: 60px;
+  height: 60px;
+  left: -5px;
+  bottom: -3px;
+  background-color: white;
+  border-radius: 50%;
+  transition: transform 0.3s;
+  border: 2px solid #ccc;
+}
+.toggle-label::after {
+  content: "No"; 
+  position: absolute;
+  right: 35px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: gray;
+  font-size: 27px;
+  font-weight: bold;
+  font-family:'Times New Roman', Times, serif;
+  transition: left 0.3s, right 0.3s;
+}
+.toggle-cb:checked + .toggle-label {
+  background-color: rgb(192, 4, 4);
+}
+.toggle-cb:checked + .toggle-label .toggle-switch {
+  transform: translateX(93px);
+}
+.toggle-cb:checked + .toggle-label::after {
+  content: "Yes";
+  left: auto;
+  right: 85px; 
+  color: white;
+}
+
