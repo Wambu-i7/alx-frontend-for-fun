@@ -1,0 +1,15 @@
+/*
+  Task: 
+  - Assign no margin or padding to the body tag.
+  - Assign a margin of 10px to all p tags inside body tags.
+  This SCSS file uses nested declarations.
+*/
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+body p {
+  margin: 10px;
+}
+
