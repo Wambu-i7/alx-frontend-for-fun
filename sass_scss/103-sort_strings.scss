@@ -1,0 +1,14 @@
+/*
+  Task:
+  - Sort the list of strings stored in the variable $list_to_sort.
+  - Print the sorted list using the @debug directive.
+*/
+
+$list_to_sort: john anna zoe kim felicia carrie;
+
+// Sort the list
+$list_sorted: sort($list_to_sort);
+
+// Print the sorted list to the debug output
+@debug $list_sorted;
+
