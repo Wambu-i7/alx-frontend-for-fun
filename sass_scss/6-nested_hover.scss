@@ -1,0 +1,14 @@
+/*
+  Task: 
+  - Assign text color #FF0000 to button tags.
+  - Change text color to #00FF00 when the user hovers over button tags.
+  This SCSS file uses nested declarations.
+*/
+
+button {
+  color: #FF0000;
+
+  &:hover {
+    color: #00FF00;
+  }
+}

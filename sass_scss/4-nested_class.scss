@@ -1,0 +1,14 @@
+/*
+  Task: 
+  - Assign text color #3D3D3D to elements inside the body tags.
+  - Assign text color #FF0000 to any elements with the .red class.
+  This SCSS file uses nested declarations.
+*/
+
+body {
+  color: #3D3D3D;
+
+  .red {
+    color: #FF0000;
+  }
+}
