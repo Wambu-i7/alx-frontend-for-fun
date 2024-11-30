@@ -1,0 +1,15 @@
+/*
+  Task:
+  - Assign font size 20px to h1 tags.
+  - When the screen width is smaller than 320px, change the font size of h1 to 14px.
+  - Use a media query to apply the styles for small screens.
+*/
+
+h1 {
+  font-size: 20px;
+
+  @media screen and (max-width: 320px) {
+    font-size: 14px;
+  }
+}
+

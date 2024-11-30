@@ -1,0 +1,13 @@
+/*
+  Task:
+  - Create H* tags (h1 to h5) where ‘*’ is the size of the font used.
+  - h1 must have font size equal to 1px, h2 must have font size equal to 2px, etc.
+  - Use the @for statement to generate the tags.
+*/
+
+@for $i from 1 through 5 {
+  h#{$i} {
+    font-size: #{$i}px;
+  }
+}
+
