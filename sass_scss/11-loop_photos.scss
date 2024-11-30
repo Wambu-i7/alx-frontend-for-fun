@@ -1,0 +1,17 @@
+/*
+  Task:
+  - Create a class for each name in the list.
+  - Use @import to include any necessary dependencies.
+  - Use the @each statement to iterate over the list and create the corresponding classes.
+*/
+
+@import '11-photos';
+
+$list-names: julien john sam damian;
+
+@each $name in $list-names {
+  .photo-#{$name} {
+    background: image-url("photos/#{$name}.jpg") no-repeat;
+  }
+}
+
