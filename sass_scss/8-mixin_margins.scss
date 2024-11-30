@@ -1,0 +1,20 @@
+/*
+  Task: 
+  - Assign margin-left and margin-right of 10px to body tags.
+  - Assign margin-left and margin-right of 15px to div tags.
+  This SCSS file uses a mixin to handle the margin assignments.
+*/
+
+@mixin set-horizontal-margin($left, $right) {
+  margin-left: $left;
+  margin-right: $right;
+}
+
+body {
+  @include set-horizontal-margin(10px, 10px);
+}
+
+div {
+  @include set-horizontal-margin(15px, 15px);
+}
+

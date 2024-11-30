@@ -1,0 +1,22 @@
+/*
+  Task: 
+  - Assign font size 12px to all tags of class .info.
+  - Assign text color #00FF00 to all tags of class .success and extend the style of the .info class.
+  - Assign text color #FF0000 to all tags of class .warning and extend the style of the .info class.
+  This SCSS file uses the @extend directive.
+*/
+
+.info {
+  font-size: 12px;
+}
+
+.success {
+  @extend .info;
+  color: #00FF00;
+}
+
+.warning {
+  @extend .info;
+  color: #FF0000;
+}
+

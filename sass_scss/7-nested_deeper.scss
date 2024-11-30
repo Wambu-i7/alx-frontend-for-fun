@@ -1,0 +1,20 @@
+/*
+  Task:
+  - Assign font size 14px to all body tags.
+  - Assign font size 16px to all h1 tags inside body tags.
+  - Assign font size 12px to h1 tags with the .smaller class inside body tags.
+  This SCSS file uses nested declarations.
+*/
+
+body {
+  font-size: 14px;
+
+  h1 {
+    font-size: 16px;
+
+    &.smaller {
+      font-size: 12px;
+    }
+  }
+}
+

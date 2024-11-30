@@ -1,0 +1,22 @@
+/*
+  Task:
+  - Assign text color $red from 10-colors.scss to the class .red.
+  - Assign text color $green from 10-colors.scss to the class .green.
+  - Assign text color $blue from 10-colors.scss to the class .blue.
+  This SCSS file uses @import to include colors from 10-colors.scss.
+*/
+
+@import '10-colors';
+
+.red {
+  color: $red;
+}
+
+.green {
+  color: $green;
+}
+
+.blue {
+  color: $blue;
+}
+
